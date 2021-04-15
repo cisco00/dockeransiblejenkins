@@ -6,9 +6,9 @@
       apt:
         name: python3-pip
         state: present
-    - name: Install docker.io
+    - name: Install docker
       apt:
-        name: docker
+        name: docker.io
         state: present
     - name: start docker
       service:
@@ -21,7 +21,7 @@
         state: present
     - name: Start the container
       docker_container:
-        name: hariapp
+        name: maven
         image: "cisco00/maven01:1.0.0"
         state: started
         published_ports:
