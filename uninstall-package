@@ -1,0 +1,32 @@
+- hosts: all
+  become: yes
+  tasks:
+  - name: Remove Docker
+    apt:
+      pkg: docker
+      state: absent
+      update_cache: true
+ 
+  - name: uninstall APT Transport HTTPS
+    apt:
+      pkg: apt-transport-https
+      state: absent
+      update_cache: true
+      
+  - name: uninstall kubectl
+    apt:
+      name: kubectl
+      state: absent
+      update_cache: true
+      
+  - name: uninstall kubelet
+    apt:
+      name: kubelet
+      state: absent
+      update_cache: true
+ 
+  - name: uninstall kubeadm
+    apt:
+      name: kubeadm
+      state: absent
+      update_cache: true
