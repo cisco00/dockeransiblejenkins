@@ -1,10 +1,10 @@
 [master]
-kbhost ansible_hosts=172.31.69.11 = ansible_user=ubuntu
+kbhost ansible_host=172.31.69.11 ansible_user=ubuntu
 
 
 [workers]
-kbnode1 ansible_hosts=172.31.74.27 ansible_user = ubuntu
-kbnode2 ansible_hosts=172.31.79.158 ansible_user = ubuntu
+kbnode1 ansible_host=172.31.74.27 ansible_user = ubuntu
+kbnode2 ansible_host=172.31.79.158 ansible_user = ubuntu
 
 [all:vars]
 ansible_python_interpreter=/usr/bin/python3
