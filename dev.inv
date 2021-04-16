@@ -1,4 +1,9 @@
-[dev]
-kbnode1 ansible_user = ubuntu
-kbnode2 ansible_user = ubuntu
+[master]
+kbhost 172.31.69.11 = ansible_user=ubuntu
+
+
+
+[workers]
+kbnode1 172.31.74.27 ansible_user = ubuntu
+kbnode2 172.31.79.158 ansible_user = ubuntu
 
