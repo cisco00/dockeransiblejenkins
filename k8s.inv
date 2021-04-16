@@ -1,5 +1,5 @@
 [master]
-kbhost ansible_host=172.31.68.241 ansible_user=ubuntu
+kbhost ansible_host=172.31.68.241 ansible_user = ubuntu
 
 
 [workers]
