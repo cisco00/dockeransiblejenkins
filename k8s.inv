@@ -1,0 +1,7 @@
+[master]
+kbhost ansible_hosts = ansible_user=ubuntu
+
+
+[workers]
+kbnode1 ansible_hosts = ansible_user=ubuntu
+kbnode2 ansible_hosts = ansible_user=ubuntu
